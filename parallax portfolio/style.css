@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+body {
+  height: auto;
+  position:relative;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  padding-top: 40px;
+}
+.first {
+  z-index: 98;
+}
+
+.position {
+  z-index: 101;
+  position: fixed;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  top: 45%;
+  left: 45%;
+}
+i::before {
+  font-size: 200px;
+  color: #020145;
+}
+.html, .css, .js, .wp, .php {
+  display: block;
+  height: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color: #434242;
+  letter-spacing:0.1em;
+  font-family:arial;
+}
+.top-text {
+  top: 46%;
+  left: 15%;
+  border-bottom: 1px solid #434242;
+  color: #434242;
+  letter-spacing: 0.1em;
+  font-family:arial;
+}
+.second-text {
+  top: 90%;
+  left: 70%;
+  font-family: serif;
+    color: #434242;
+}
+.caution {
+  font-size: 30px;
+  color: #434242;
+    line-height: 50px;
+    animation:movetoRight 18s linear infinite ;
+}
+@keyframes movetoRight{
+  from{
+    margin-left:130%;
+  }
+  to{
+    margin-left:-180%;
+  }
+}
+.cautionbox{
+  width:70%;
+  height:50px;
+  overflow:hidden;
+  top:0;
+  left:3%;
+}
+/*----------nav開始----------------*/
+.gnav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #a8a6a6;
+  display: block;
+  z-index: 1000;
+}
+
+.gnav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gnav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+.gnav ul li a {
+  font-size: 30px;
+  color: #383838;
+  line-height: 50px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.3em;
+}
+.finger{
+    top: 70%;
+    left: 15%;
+    animation:updown 1.5s linear infinite;
+}
+
+@keyframes updown{
+    0%{
+        top: 70%;
+    }
+    50%{
+        top: 73%;
+    }
+    100%{
+        top: 70%;
+    }
+}
+/*----------nav終了----------------*/
+
+/*---------スキルスライドショー開始-----------*/
+
+.second {
+  z-index: 99; /*position:relative;*/
+  height: 14000px;
+}
+.bar {
+  width: 50%;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1000;
+  /*background-color:#939393;*/
+  border: 1px solid #020145;
+  top: 80%;
+  left: 23%;
+  overflow: hidden;
+}
+.bar-inner {
+  background-color: #020145;
+  margin-right: 100%;
+  display: block;
+  height: 100%;
+}
+.mark {
+  top: 10%;
+  left: 37%;
+}
+.html {
+  top: 60%;
+  left: 30%;
+}
+.css {
+  top: 60%;
+  left: 70%;
+}
+.js {
+  top: 60%;
+  left: 50%;
+}
+.wp {
+  top: 60%;
+  left: 30%;
+}
+.wp-bar {
+  left: 23%;
+}
+.php-bar {
+  left: 30%;
+}
+.php {
+  top: 60%;
+  left: 70%;
+}
+
+/*---------スキルスライドショー終了-----------*/
+
+/*--------4枚目(skill)----------*/
+svg {
+  fill: none;
+}
+.st1 {
+  fill: #000;
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+}
+.small {
+  width: 30%;
+  text-align: center;
+  font-size: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+i.small {
+  width: 30%;
+  text-align: center;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+i.small::before {
+  color: #434242;
+  display: block;
+  font-size: 70px;
+}
+.skill-left, .skill-right {
+  width: 50%;
+}
+.small path {
+  fill:  #434242;
+}
+.fourth {
+  transform-origin: top left; /*transform:rotate(180deg);*/
+  height: 100vh;
+  z-index: 106;
+  background-color: #eee;
+  padding: 80px 0;
+  position:absolute;
+  margin-top:17000px;
+}
+
+.allskill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+    width: 90%;
+    margin: 0 auto;
+}
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar-out {
+  width: 40%;
+  border: 1px solid #434242;
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+}
+.lang-item {
+  margin-bottom: 20px;
+}
+.-inner {
+  height: 30px;
+  background-color: #434242;
+}
+.__html, .__css {
+  margin-right: 20%;
+}
+.__js, .__jquery {
+  margin-right: 50%;
+}
+.__wp {
+  margin-right: 70%;
+}
+.__php {
+  margin-right: 85%;
+}
+.__ai {
+  margin-right: 50%;
+}
+.__ps {
+  margin-right: 65%;
+}
+
+.backtop{
+    top: 80%;
+    left: 92%;
+    width: 80px;
+    height: 80px;
+    border-radius:20px;
+    background-color:#FFD6D9;
+    z-index:150;
+    cursor: pointer;
+}
+/*--------4枚目(skill)----------*/
+
+/*--------5枚目(work)----------*/
+.fifth {
+  z-index: 106;
+  padding: 80px 0 30px;
+  /*width: 100vw;*/
+  background-color: #eee;
+  position:absolute;
+  margin-top: 17800px;
+  height:auto;
+}
+.__group, .__kojin {
+  width: 60%;
+  margin: 0 auto;
+}
+.__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.__content span {
+  font-size: 14px;
+  color: #666;
+}
+.-title {
+  margin-top: 30px;
+}
+.__content a {
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+}
+.__content__img {
+  text-align: center;
+  width: 100%;
+  height: auto;
+    border:1px solid #727272;
+}
+.__content-desc {
+  width: 40%;
+  line-height:1.5;
+}
+.third{
+  z-index:106;
+  width: 100%;
+  height: 100%;
+  transform-origin:top left;
+  padding-top: 80px;
+
+}
+
+/* めがねsvg */
+#noglasses,#glasses{
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  display: block;
+    transform-origin: top right;
+  
+}
+#noglasses path,#glasses path{
+  filter:blur(0);
+}
+.st0{fill:none;stroke:#8B8A8A;stroke-width:3px;stroke-miterlimit:10;stroke-dasharray: 20px;}
+	.st1{fill:none;stroke:#060001;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#8B8A8A;stroke-miterlimit:10;stroke-dasharray: 20px;}
+	.st3{fill:none;stroke:#8B8A8A;stroke-dasharray: 30px;stroke-width:2px;}
+	.st4{fill:none;stroke:#4A5760;stroke-width:11.3386;stroke-miterlimit:10;}
+	.st5{fill:#084184;}
+	.st6{fill:none;stroke:#084184;stroke-width:11.3386;stroke-miterlimit:10;}
+
+@keyframes tenmetu{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+.grayglasses{
+    animation:tenmetu 0.6s 1s 6 forwards reverse;
+}
